@@ -37,7 +37,7 @@ QUERY;
 
         $result = \DB::selectOne($sql, $bindings);
 
-        if (empty($result)) {
+        if (!is_object($result)) {
             throw new \Exception("No such link exists!");
         }
 

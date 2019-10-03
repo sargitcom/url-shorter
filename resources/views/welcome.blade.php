@@ -32,7 +32,13 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <?php
+                        if (isset($encodedUri)) {
+                            echo "<p>Your share url: " . url("/" . $encodedUri) . '</p>';
+                            echo "<p>Your stats url: " . url("/" . $encodedUri . "/stats") . '</p>';
+                        }
 
+                    ?>
                 </div>
             </div>
         </div>

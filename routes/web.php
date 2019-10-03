@@ -17,3 +17,4 @@ Route::post('/', 'UrlController@welcome');
 
 Route::get('/{id}', 'UrlController@redirectToUri');
 
+Route::get('/{id}/stats', 'UrlController@uriStatistics');
